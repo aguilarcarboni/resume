@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { AnimatePresence, motion } from 'framer-motion'
-import { personalLinks, workLinks } from '@/lib/links'
+import { personalLinks } from '@/lib/links'
 import {
     Tooltip,
     TooltipContent,
@@ -12,14 +12,13 @@ import { TooltipProvider } from '@radix-ui/react-tooltip'
 
 const LinkScroller = ({ name }: { name: string }) => {
   const [index, setIndex] = useState(0)
-  const links = name === 'laserfocus' ? workLinks : personalLinks
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % links.length)
+      setIndex((prevIndex) => (prevIndex + 1) % personalLinks.length)
     }, 1500)
     return () => clearInterval(interval)
-  }, [links.length])
+  }, [personalLinks.length])
 
   return (
     <TooltipProvider delayDuration={50}>
@@ -37,8 +36,8 @@ const LinkScroller = ({ name }: { name: string }) => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
             >
-              {React.createElement(links[index].icon, { className: 'w-6 h-6 text-primary' })}
-              <p className='text-sm font-medium'>{links[index].username}</p>
+              {React.createElement(personalLinks[index].icon, { className: 'w-6 h-6 text-primary' })}
+              <p className='text-sm font-medium'>{personalLinks[index].username}</p>
             </motion.div>
           </AnimatePresence>
         </TooltipContent>

@@ -29,22 +29,3 @@ export const personalLinks = [
     username: 'aguilarcarboni'
   },
 ];
-
-    
-export const workLinks = [
-  {
-    icon: FaInstagram,
-    href: 'https://www.instagram.com/laserfocuscr/',
-    username: 'laserfocuscr',
-  },
-  {
-    icon: FaLinkedin,
-    href: 'https://www.linkedin.com/company/laserfocuscr/',
-    username: 'laserfocused'
-  },
-  {
-    icon: FaGithub,
-    href: 'https://github.com/laserfocuscr',
-    username: 'laserfocus11'
-  }
-]

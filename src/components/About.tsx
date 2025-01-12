@@ -6,27 +6,7 @@ import { cn } from '@/lib/utils'
 import { rubik } from '@/lib/fonts'
 import LinkScroller from './misc/LinkScroller'
 import Image from 'next/image'
-
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: { 
-    opacity: 1,
-    transition: { 
-      staggerChildren: 0.1,
-      delayChildren: 0.3
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: { 
-    y: 0, 
-    opacity: 1,
-    transition: { type: 'spring', stiffness: 100 }
-  }
-}
+import { containerVariants, itemVariants } from '@/lib/anims'
 
 interface AboutProps {
   name: string;
