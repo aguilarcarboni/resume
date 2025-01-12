@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import WorkExperience from './components/WorkExperience'
 import Education from './components/Education'
 import Languages from './components/Languages'
-
 import { containerVariants, itemVariants } from '@/lib/anims'
 import GitHubContributions from './components/GitHubContributions'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'

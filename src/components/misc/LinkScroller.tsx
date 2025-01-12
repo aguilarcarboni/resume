@@ -18,7 +18,7 @@ const LinkScroller = ({ name }: { name: string }) => {
       setIndex((prevIndex) => (prevIndex + 1) % personalLinks.length)
     }, 1500)
     return () => clearInterval(interval)
-  }, [personalLinks.length])
+  }, [])
 
   return (
     <TooltipProvider delayDuration={50}>
