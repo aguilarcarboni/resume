@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Header from '@/components/Header'
 
 export const metadata: Metadata = {
-  title: 'laserfocus',
+  title: 'Andres Aguilar',
 };
 
 export default function RootLayout({
