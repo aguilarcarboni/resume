@@ -101,7 +101,7 @@ module.exports = {
   plugins: [
     require("tailwindcss-animate"),
     require('@tailwindcss/typography'),
-    ({ addUtilities }) => {
+    ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) => {
       const newUtilities = {
         ".backface-hidden": {
           "backface-visibility": "hidden",
