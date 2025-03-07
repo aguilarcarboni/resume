@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { skills } from '@/lib/resume'
+import { skills } from '@/lib/resume/resume'
 import { Lightbulb } from 'lucide-react'
 
 

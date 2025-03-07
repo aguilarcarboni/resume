@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Briefcase } from 'lucide-react'
-import { experiences } from '@/lib/resume'
+import { experiences } from '@/lib/resume/resume'
 
 const WorkExperience = () => {
   return (

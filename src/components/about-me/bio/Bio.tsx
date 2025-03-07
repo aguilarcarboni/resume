@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { containerVariants, itemVariants } from '@/lib/anims'
-import { bio } from '@/lib/bio'
+import { bio } from '@/lib/resume/bio'
 
 const Bio = () => {
   return (

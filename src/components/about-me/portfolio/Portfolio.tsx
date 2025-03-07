@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from 'next/image'
-import { projects } from '@/lib/projects'
+import { projects } from '@/lib/resume/projects'
 
 const Portfolio = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 

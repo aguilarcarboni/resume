@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { User } from 'lucide-react'
 import Skills from './components/Skills'
 import Awards from './components/Awards'
-import { tagline } from '@/lib/resume'
+import { tagline } from '@/lib/resume/resume'
 
 const Resume = () => {
   return (

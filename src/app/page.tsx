@@ -7,6 +7,7 @@ import { Repositories } from '@/components/about-me/repositories/Repositories'
 import Bio from '@/components/about-me/bio/Bio'
 import Freelancing from '@/components/about-me/freelancing/Freelancing'
 import Contact from '@/components/about-me/contact/Contact'
+import Other from '@/components/about-me/other/Other'
 
 const AboutMe = () => {
   
@@ -40,6 +41,11 @@ const AboutMe = () => {
       value: "contact",
       label: "Contact",
       content: <Contact />
+    },
+    {
+      value: "other",
+      label: "Other",
+      content: <Other />
     }
   ]
 

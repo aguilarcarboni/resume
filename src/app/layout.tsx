@@ -25,7 +25,7 @@ export default function RootLayout({
             defaultTheme="light"
             disableTransitionOnChange
           >
-            <div className='h-full p-5 w-full flex flex-col gap-24'>
+            <div className='h-full p-5 w-full flex flex-col gap-18'>
               <Header />
               <div className='h-full w-full flex'>
                 {children}

@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { GraduationCap } from 'lucide-react'
-import { education } from '@/lib/resume'
+import { education } from '@/lib/resume/resume'
 
 const Education = () => {
   return (

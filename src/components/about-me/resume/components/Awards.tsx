@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Lightbulb } from "lucide-react"
-import { awards } from '@/lib/resume'
+import { awards } from '@/lib/resume/resume'
 
 const Awards = () => {
   return (

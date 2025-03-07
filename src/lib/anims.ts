@@ -1,3 +1,17 @@
+export const cardVariants = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: { 
+        scale: 1, 
+        opacity: 1, 
+        transition: { 
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            duration: 0.5 
+        } 
+    }
+}
+
 export const containerVariants = {
     hidden: { opacity: 0 },
     visible: { 
@@ -17,4 +31,15 @@ export const itemVariants = {
         transition: { type: 'spring', stiffness: 100 }
     }
 }
+
+export const pageVariants = {
+    initial: { opacity: 0, x: '-100%' },
+    in: { opacity: 1, x: 0 },
+    out: { opacity: 0, x: '100%' },
+  };
   
+export const pageTransition = {
+    type: 'tween',
+    ease: 'anticipate',
+    duration: 0.5,
+};

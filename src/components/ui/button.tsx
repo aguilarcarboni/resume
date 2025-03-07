@@ -10,8 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "bg-primary text-background hover:bg-primary",
+        athena: "shimmer-background-blue text-background",
         secondary: "bg-background text-primary hover:bg-muted hover:text-primary",
-        athena: "bg-secondary text-background hover:bg-secondary-dark",
         outline: "border border-muted bg-background hover:bg-muted hover:text-foreground",
         ghost: "bg-background hover:bg-muted hover:text-foreground",
         link: "text-foreground underline-offset-4 hover:underline",

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Globe } from 'lucide-react'
-import { languages } from '@/lib/resume'
+import { languages } from '@/lib/resume/resume'
 
 const Languages = () => {
   return (

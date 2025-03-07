@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { containerVariants } from "@/lib/anims";
-import { personalLinks } from "@/lib/links";
+import { personalLinks } from "@/lib/resume/links";
 
 export default function Contact() {
   return (
