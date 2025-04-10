@@ -7,19 +7,25 @@ export const experiences = [
       title: "IT Specialist",
       company: "AGM Trader Broker and Advisor",
       period: "January 2024 - Present",
-      description: "Providing technological support and automated solutions. Developed internal projects including database creation and a web app for trading basics.",
+      description: "Streamlined internal operations by modernizing the company's data-fetching pipelines, leading to faster and more reliable data access across departments using a custom built API for the company’s needs. Also, started development on a custom web suite that served as a comprehensive solution for various company needs, including an admin portal for seamless data access for our organization. This web suite also enhanced the company's online presence and service delivery, contributing to greater customer satisfaction and internal efficiency.",
+    },
+    {
+      title: "Founder",
+      company: "laserfocus",
+      period: "January 2023 - Present",
+      description: "What began as a private mathematics tutoring service for college and high school students evolved into Laserfocus, a technology-driven company dedicated to empowering individuals to achieve their personal and professional goals with clarity and precision. Laserfocus offers a suite of AI-powered services designed to enhance productivity, streamline decision-making, and optimize performance. By leveraging cutting-edge technology, Laserfocus provides clients with unparalleled tools to harness their potential and turn dreams into reality, setting a new standard for success-driven innovation.",
     },
     {
       title: "Software Engineering Intern",
       company: "PRIAS at Centro Nacional de Alta Tecnología",
       period: "January 2023 - Present",
-      description: "Focused on technological support and automation. Worked on various internal projects and database management.",
+      description: "Spearheaded the development of Spectra, a custom-built web application and relational database designed to store and display detailed information about researchers and mission data. This platform significantly enhanced data accessibility and streamlined research reporting, contributing to improved operational efficiency within the lab. Also collaborated closely with research teams to gather requirements and ensure the platform met scientific data management needs.",
     },
     {
       title: "Learning Assistant and Tutor",
       company: "Texas Tech Costa Rica",
       period: "January 2022 - December 2022",
-      description: "Assisted over 50 students in multiple classes. Worked as an in-class learning assistant for mathematics.",
+      description: "Assisted Professor Hugo Marenco in planning and teaching Precalculus, Calculus I and II, and Physics courses. Designed problem sets, graded assignments, and provided instructional support during lectures. Tutored over 20 students during office hours, offering personalized guidance on complex mathematical concepts, helping improve student performance and comprehension. Played a key role in coordinating classroom activities and ensuring smooth course delivery throughout the academic term.",
     },
 ]
 
@@ -95,55 +101,40 @@ export const education = [
 ]
 
 export const awards = [
-    {
-      title: "Dean's List",
-      description: "Fall 2021, Fall 2022, Spring 2023 semesters",
-    },
-    {
-      title: "Presidential's Award",
-      description: "Spring 2022 semester",
-    },
-    {
-      title: "55% Tuition Scholarship",
-      description: "Texas Tech Costa Rica",
-    },
-    {
-      title: "President of Texas Tech Costa Rica",
-      description: "Feb 2024-present",
-    },
-    {
-      title: "Hosted Texas Tech Costa Rica's annual hackathon",
-      description: "Nov 2023, Nov 2024",
-    },
-    {
-      title: "President of Raider Athletics",
-      description: "Jan 2024-present",
-    },
-    {
-      title: "Co-founder and Director of the Texas Tech Costa Rica Startup And Tech club",
-      description: "Sept 2023-present",
-    },
-    {
-      title: "Former D1 Volleyball Player in Costa Rica",
-      description: "2019-2021",
-    },
-    {
-      title: "Costa Rica's first place in NASA Space Apps Challenge",
-      description: "2023",
-    },
-]
-
-export const projects = [
-    {
-    name: "Founder",
-    tagline: "laserfocus",
-    description:'January 2023 - Present',
-    summary: "Innovating at laser speed. Started a private tutoring service for high school and college level mathematics and physics. Helped over 25 students achieve outstanding scores in high level courses. ",
-    },
-    {
-    name: "ABMODEL",
-    tagline: "Local winner submission for NASAs Space Apps Challenge 2023",
-    description:'January 2023 - Present',
-    summary: "Developed a web app that allows for visualization of Moonquake data collected by NASA. Won first place in local competition, nominated for global competition",
-    },
+  {
+    title: "Costa Rica's first place in NASA Space Apps Challenge",
+    description: "2023",
+  },
+  {
+    title: "President of Texas Tech Costa Rica",
+    description: "Feb 2024-April 2025",
+  },
+  {
+    title: "President of Raider Athletics",
+    description: "Jan 2024-present",
+  },
+  {
+    title: "Co-founder and Director of Operations of the Startup and Tech Lab",
+    description: "Sept 2023-present",
+  },
+  {
+    title: "Hosted Texas Tech Costa Rica's annual hackathon",
+    description: "Nov 2023, Nov 2024",
+  },
+  {
+    title: "Dean's List",
+    description: "Fall 2021, Fall 2022, Spring 2023 semesters",
+  },
+  {
+    title: "Presidential's Award",
+    description: "Spring 2022 semester",
+  },
+  {
+    title: "55% Tuition Scholarship",
+    description: "Texas Tech Costa Rica",
+  },
+  {
+    title: "Former D1 Volleyball Player in Costa Rica",
+    description: "2019-2021",
+  },
 ]

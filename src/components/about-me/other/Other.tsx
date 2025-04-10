@@ -43,43 +43,45 @@ const Other = () => {
         animate="visible"
         className="h-fit w-full max-w-3xl justify-center items-center mx-auto"
       >
-        <Card className="w-full">
-          <CardHeader>
-            <CardTitle className="text-3xl font-bold">Other Cool Stuff</CardTitle>
-            <CardDescription>Discover more interesting content</CardDescription>
-          </CardHeader>
-          <CardContent className="px-12">
-            <Carousel
-              opts={{
-                align: "center",
-                loop: true
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {coolItems.map((item, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <motion.div variants={itemVariants} className="h-full">
-                      <Button
-                        asChild
-                        variant="ghost"
-                        className="w-full h-48 flex flex-col gap-4"
-                      >
-                        <Link href={item.href}>
-                          <item.icon className="w-12 h-12" />
-                          <span className="text-2xl font-semibold">{item.title}</span>
-                          <span className="text-sm text-muted-foreground">{item.description}</span>
-                        </Link>
-                      </Button>
-                    </motion.div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </CardContent>
-        </Card>
+        <motion.div variants={itemVariants}>
+          <Card className="w-full">
+            <CardHeader className="flex flex-col justify-center items-center gap-2">
+              <CardTitle className="text-3xl font-bold">Other Cool Stuff</CardTitle>
+              <CardDescription>Discover more interesting content</CardDescription>
+            </CardHeader>
+            <CardContent className="px-12">
+              <Carousel
+                opts={{
+                  align: "center",
+                  loop: true
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  {coolItems.map((item, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <motion.div variants={itemVariants} className="h-full">
+                        <Button
+                          asChild
+                          variant="ghost"
+                          className="w-full h-48 flex flex-col gap-4"
+                        >
+                          <Link href={item.href}>
+                            <item.icon className="w-12 h-12" />
+                            <span className="text-2xl font-semibold">{item.title}</span>
+                            <span className="text-sm text-muted-foreground">{item.description}</span>
+                          </Link>
+                        </Button>
+                      </motion.div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </CardContent>
+          </Card>
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   )

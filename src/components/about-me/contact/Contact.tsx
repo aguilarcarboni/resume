@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { containerVariants } from "@/lib/anims";
+import { containerVariants, itemVariants } from "@/lib/anims";
 import { personalLinks } from "@/lib/resume/links";
 
 export default function Contact() {
@@ -13,6 +13,9 @@ export default function Contact() {
       variants={containerVariants}
       className="container mx-auto flex justify-center items-center" 
     >
+      <motion.div
+        variants={itemVariants}
+      >
       <Card className="w-full max-w-2xl mx-auto">
         <CardContent className="justify-center items-center flex flex-col gap-4">
           {personalLinks.map((item, index) => (
@@ -23,8 +26,9 @@ export default function Contact() {
               </Link>
             </Button>
           ))}
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </motion.div>
     </motion.div>
   );
 }

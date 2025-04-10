@@ -15,41 +15,32 @@ const Freelancing = () => {
     >
       <motion.div variants={itemVariants}>
         <Card className="h-full flex flex-col">
-          <motion.div
-            variants={itemVariants}
-            className="w-full"
-          >
-            <CardHeader>
-              <motion.div 
-                variants={itemVariants}
-                className="flex items-center space-x-2"
-              >
-                <Laptop className="w-6 h-6 text-primary" />
-                <CardTitle>Freelancing Services</CardTitle>
-              </motion.div>
-              <motion.div variants={itemVariants}>
-                <CardDescription>Tailored solutions for your needs</CardDescription>
-              </motion.div>
-            </CardHeader>
-          </motion.div>
+          <CardHeader>
+            <div 
+              className="flex items-center space-x-2"
+            >
+              <Laptop className="w-6 h-6 text-primary" />
+              <CardTitle>Freelancing Services</CardTitle>
+            </div>
+            <CardDescription>Tailored solutions for your needs</CardDescription>
+          </CardHeader>
           
           <CardContent className="flex-grow space-y-4">
-            <motion.p 
-              variants={itemVariants}
+            <p 
               className="leading-relaxed"
             >
               As a freelance software engineer and data scientist, I offer a range of services including:
-            </motion.p>
+            </p>
             
             <ul 
               className="list-disc pl-5 space-y-2"
             >
               {["Full-stack web development", "Custom software solutions", "Data analysis and visualization", "Machine learning model development", "Technical consulting"].map((service, index) => (
-                <motion.li 
+                <li 
                   key={index}
-                  variants={itemVariants}
-                  custom={index}
-                >{service}</motion.li>
+                >
+                  {service}
+                </li>
               ))}
             </ul>
             

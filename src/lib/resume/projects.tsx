@@ -55,7 +55,7 @@ export const projects = [
         '/assets/projects/spectra/1.png',
         '/assets/projects/spectra/2.png',
       ],
-      'state': 2
+      'state': 1
     },
     {
       'name': 'StarTickets Website Refresh',
@@ -74,6 +74,6 @@ export const projects = [
         '/assets/projects/startickets/1.png',
         '/assets/projects/startickets/2.png',
       ],
-      'state': 2
+      'state': 1
     },
 ]
