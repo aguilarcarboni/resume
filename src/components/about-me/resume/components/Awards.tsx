@@ -16,7 +16,7 @@ const Awards = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-rows-3 grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {awards.map((award, index) => (
             <div key={index} className="flex flex-col bg-muted p-3 rounded-md items-start justify-center">
               <h3 className="font-semibold text-lg">{award.title}</h3>

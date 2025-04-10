@@ -22,38 +22,38 @@ const Resume = () => {
       >
         <motion.div
           variants={containerVariants}
-          className="grid grid-cols-4 gap-4"
+          className="grid grid-cols-1 md:grid-cols-4 gap-4"
         >
-          <motion.div variants={itemVariants} className="col-span-4 row-span-1">
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-4">
             <Card className="h-full flex flex-col transition-transform duration-300 group-hover:scale-105">
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <User className='text-primary'/>
-                  <CardTitle>Get to know me</CardTitle>
+                  <CardTitle>Introduction</CardTitle>
                 </div>
-                <CardDescription>A little about myself</CardDescription>
+                <CardDescription>Who is Andrés Aguilar?</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p>{tagline}</p>
               </CardContent>
             </Card>
           </motion.div>
-          <motion.div variants={itemVariants} className="col-span-2 row-start-2">
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2">
             <WorkExperience />
           </motion.div>
-          <motion.div variants={itemVariants} className="col-span-1 row-start-2">
+          <motion.div variants={itemVariants} className="col-span-1">
             <Education />
           </motion.div>
-          <motion.div variants={itemVariants} className="col-span-1 row-start-2">
+          <motion.div variants={itemVariants} className="col-span-1">
             <Skills />
           </motion.div>
-          <motion.div variants={itemVariants} className="col-span-1 row-start-3">
+          <motion.div variants={itemVariants} className="col-span-1">
             <Languages />
           </motion.div>
-          <motion.div variants={itemVariants} className="col-span-3">
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-3">
             <GitHubContributions />
           </motion.div>
-          <motion.div variants={itemVariants} className="col-span-4 row-start-4">
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-4">
             <Awards />
           </motion.div>
         </motion.div>

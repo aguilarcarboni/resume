@@ -8,6 +8,7 @@ import Bio from '@/components/about-me/bio/Bio'
 import Freelancing from '@/components/about-me/freelancing/Freelancing'
 import Contact from '@/components/about-me/contact/Contact'
 import Other from '@/components/about-me/other/Other'
+import { Mail, File, User, Briefcase, Code } from 'lucide-react'
 
 const AboutMe = () => {
   
@@ -15,43 +16,50 @@ const AboutMe = () => {
     {
       value: "bio",
       label: "Bio",
-      content: <Bio />
+      content: <Bio />,
+      icon: <User />
     },
     {
       value: "resume",
       label: "Resume",
-      content: <Resume />
+      content: <Resume />,
+      icon: <File />
     },
     {
       value: "portfolio",
       label: "Portfolio",
-      content: <Portfolio />
+      content: <Portfolio />,
+      icon: <Briefcase />
     },
     {
       value: "repos",
       label: "Repositories",
-      content: <Repositories />
+      content: <Repositories />,
+      icon: <Code />
     },
     {
       value: "freelancing",
       label: "Freelancing",
-      content: <Freelancing />
+        content: <Freelancing />,
+      icon: <Briefcase />
     },
     {
       value: "contact",
       label: "Contact",
-      content: <Contact />
+      content: <Contact />,
+      icon: <Mail />
     },
     {
       value: "other",
       label: "Other",
-      content: <Other />
+      content: <Other />,
+      icon: <Code />
     }
   ]
 
   return (
     <About
-      name="Andres Aguilar"
+      name="Andrés Aguilar"
       title="Software Engineer & Data Scientist"
       subtitle="aguilarcarboni"
       imageUrl="/assets/headshots/headshot.jpg"
