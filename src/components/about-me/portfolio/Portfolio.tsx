@@ -2,7 +2,7 @@ import * as React from "react"
 import useEmblaCarousel from 'embla-carousel-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Link } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from 'next/image'
 import { projects } from '@/lib/resume/projects'
@@ -75,15 +75,6 @@ const Portfolio = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card className="flex flex-col h-full overflow-hidden">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={project.images[0]}
-                      alt={`${project.name} preview`}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-t-lg"
-                    />
-                  </div>
                   <CardHeader className="pb-2">
                     <CardTitle className="text-2xl font-bold text-primary">{project.name}</CardTitle>
                     <p className="text-sm text-muted-foreground italic">{project.description}</p>
@@ -91,10 +82,23 @@ const Portfolio = () => {
                   <CardContent className="flex-grow overflow-y-auto max-h-[40vh] prose prose-sm dark:prose-invert">
                     {project.content}
                   </CardContent>
-                  <div className="p-4 bg-muted/50 mt-auto">
+                  <div className="p-4 bg-muted/50 mt-auto flex justify-between items-center">
                     <p className="text-sm font-medium">
                       Status: {project.state === 1 ? 'Completed' : 'In Progress'}
                     </p>
+                    {project.url ? (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="flex items-center gap-2"
+                        onClick={() => window.open(project.url, '_blank')}
+                      >
+                        <Link className="h-4 w-4" />
+                        Visit Project
+                      </Button>
+                    ) : (
+                      <p className="text-sm text-muted-foreground">No link available</p>
+                    )}
                   </div>
                 </Card>
               </motion.div>

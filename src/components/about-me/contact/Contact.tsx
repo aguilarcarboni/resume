@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { containerVariants, itemVariants } from "@/lib/anims";
-import { personalLinks } from "@/lib/resume/links";
+import { personalLinks } from "@/lib/links";
 
 export default function Contact() {
   return (
@@ -16,10 +16,10 @@ export default function Contact() {
       <motion.div
         variants={itemVariants}
       >
-      <Card className="w-full max-w-2xl mx-auto">
-        <CardContent className="justify-center items-center flex flex-col gap-4">
+      <Card className="w-full px-10">
+        <CardContent className="flex flex-col gap-4 justify-start items-start">
           {personalLinks.map((item, index) => (
-            <Button key={index} variant="ghost" className="gap-2 w-fit h-fit flex" asChild>
+            <Button key={index} variant="ghost" className="gap-2 w-fit h-fit flex p-5" asChild>
               <Link href={item.href} target="_blank" rel="noopener noreferrer">
                 <item.icon className="w-5 h-5 text-primary" />
                 <span className="text-foreground">{item.username}</span>

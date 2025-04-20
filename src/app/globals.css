@@ -49,6 +49,12 @@ html {
   @apply rounded-md;
 }
 
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .shimmer-text-blue {
   background: linear-gradient(90deg, #3b82f6, #38bdf8, #3b82f6);
   background-size: 200% auto;
@@ -58,17 +64,3 @@ html {
   animation: gradient 3s linear infinite;
 }
 
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animated-gradient-text {
-  background: linear-gradient(90deg, #3b82f6, #ec4899, #3b82f6);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: gradient 3s linear infinite;
-}

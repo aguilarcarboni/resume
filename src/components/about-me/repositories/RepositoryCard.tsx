@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { FaGithub } from 'react-icons/fa'
+import Link from 'next/link'
 
 interface Repository {
     id: number
@@ -39,18 +40,19 @@ function RepositoryCard({ repo }: { repo: Repository }) {
                 </span>
             </div>
             <Button
-                className="bg-muted text-foreground hover:text-foreground hover:bg-muted"
+                variant="ghost"
                 size="sm"
                 asChild
+                className="w-fit"
             >
-                <a 
+                <Link
                 href={repo.html_url} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 >
-                <FaGithub className="w-4 h-4 mr-2" />
-                View on GitHub
-                </a>
+                    <FaGithub className="w-4 h-4 mr-2" />
+                    View on GitHub
+                </Link>
             </Button>
             </CardContent>
         </Card>

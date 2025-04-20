@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { Suspense } from 'react'
 import About from '@/components/About'
 import Resume from '@/components/about-me/resume/Resume'
 import Portfolio from '@/components/about-me/portfolio/Portfolio'
@@ -58,13 +58,15 @@ const AboutMe = () => {
   ]
 
   return (
-    <About
-      name="Andrés Aguilar"
-      title="Software Engineer & Data Scientist"
-      subtitle="aguilarcarboni"
-      imageUrl="/assets/headshots/headshot.jpg"
-      tabs={tabs}
-    />
+    <Suspense>
+      <About
+        name="Andrés Aguilar"
+        title="Software Engineer & Data Scientist"
+        subtitle="aguilarcarboni"
+        imageUrl="/assets/headshots/headshot.jpg"
+        tabs={tabs}
+      />
+    </Suspense>
   )
 }
 

@@ -11,12 +11,8 @@ export const projects = [
           <li>Detailed information panels for each Moonquake event</li>
         </ul>
       </div>,
-      'images': [
-        '/assets/projects/abmodel/1.png',
-        '/assets/projects/abmodel/2.png',
-        '/assets/projects/abmodel/3.png',
-      ],
-      'state': 1
+      'state': 1,
+      'url': 'https://abmodel-nasa.vercel.app/'
     },
     {
       'name': 'AGM Web Ecosystem',
@@ -31,12 +27,8 @@ export const projects = [
           <li>Compliance with financial regulations</li>
         </ul>
       </div>,
-      'images': [
-        '/assets/projects/agm/1.png',
-        '/assets/projects/agm/2.png',
-        '/assets/projects/agm/3.png',
-      ],
-      'state': 1
+      'state': 1,
+      'url': 'https://agmtechnology.com/'
     },
     {
       'name': 'Spectra',
@@ -51,11 +43,8 @@ export const projects = [
           <li>Collaborative platform for researchers</li>
         </ul>
       </div>,
-      'images': [
-        '/assets/projects/spectra/1.png',
-        '/assets/projects/spectra/2.png',
-      ],
-      'state': 1
+      'state': 1,
+      'url': ''
     },
     {
       'name': 'StarTickets Website Refresh',
@@ -70,10 +59,7 @@ export const projects = [
           <li>Improved site performance, increasing page load speed by 25%</li>
         </ul>
       </div>,
-      'images': [
-        '/assets/projects/startickets/1.png',
-        '/assets/projects/startickets/2.png',
-      ],
-      'state': 1
+      'state': 1,
+      'url': 'https://starticket.cr/en'
     },
 ]

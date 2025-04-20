@@ -4,7 +4,7 @@ export const bio = [
     { 
       title: "Get to know me", 
       description: "A little about myself", 
-      content: "I am a software engineer with hands-on experience on front-end web development, back-end engineering, database systems, devops, and more currently working towards a Bachelor’s of Science in Computer Science with a minor in Mathematics. ", 
+      content: "I am a software engineer with hands-on experience on front-end web development, back-end engineering, database systems, devops, and more currently working towards a Bachelor’s of Science in Computer Science with a minor in Mathematics.", 
       icon: User 
     },
     {
@@ -15,7 +15,7 @@ export const bio = [
     },
     { 
       title: "My mission", 
-      description: "Creating a better world", 
+      description: "Creating a better and more connected world", 
       content: "My mission is to develop projects and services that will have a positive impact in communities around the world and will empower others to dream big. This commitment extends beyond code - it's about creating a world where everyone can find their value and achieve their full potential.", 
       icon: Target 
     }

@@ -1,29 +1,26 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { containerVariants, itemVariants } from '@/lib/anims'
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
-import { Laptop } from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { useRouter } from 'next/navigation'
 
 const Freelancing = () => {
+  const router = useRouter()
+
+  const handleContactClick = () => {
+    router.push('/?tab=contact')
+  }
+
   return (
     <motion.div 
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="grid grid-cols-1 gap-6"
+      className="grid grid-cols-1 gap-6 max-w-4xl mt-5 mx-auto"
     >
       <motion.div variants={itemVariants}>
         <Card className="h-full flex flex-col">
-          <CardHeader>
-            <div 
-              className="flex items-center space-x-2"
-            >
-              <Laptop className="w-6 h-6 text-primary" />
-              <CardTitle>Freelancing Services</CardTitle>
-            </div>
-            <CardDescription>Tailored solutions for your needs</CardDescription>
-          </CardHeader>
           
           <CardContent className="flex-grow space-y-4">
             <p 
@@ -35,7 +32,7 @@ const Freelancing = () => {
             <ul 
               className="list-disc pl-5 space-y-2"
             >
-              {["Full-stack web development", "Custom software solutions", "Data analysis and visualization", "Machine learning model development", "Technical consulting"].map((service, index) => (
+              {["Full-stack web development", "Custom software solutions", "Data analysis and visualization", "Custom machine learning model development and deployment", "Technical consulting"].map((service, index) => (
                 <li 
                   key={index}
                 >
@@ -51,8 +48,9 @@ const Freelancing = () => {
               <Button
                 className="bg-transparent hover:bg-muted"
                 variant="ghost"
+                onClick={handleContactClick}
               >
-                <span className="animated-gradient-text">Contact me</span>
+                <span className="shimmer-text-blue">Let's work together</span>
               </Button>
             </div>
           </CardContent>

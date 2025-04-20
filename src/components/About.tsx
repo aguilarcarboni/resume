@@ -4,9 +4,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { rubik } from '@/lib/fonts'
-import LinkScroller from './misc/LinkScroller'
 import Image from 'next/image'
 import { containerVariants, itemVariants } from '@/lib/anims'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { location } from '@/lib/location'
 
 interface AboutProps {
   name: string;
@@ -21,7 +22,19 @@ interface AboutProps {
   }[];
 }
 
-const About: React.FC<AboutProps> = ({ name, title, subtitle, imageUrl, tabs }) => {
+const About: React.FC<AboutProps> = ({ name, title, imageUrl, tabs }) => {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const currentTab = searchParams.get('tab') || 'bio'
+
+  const handleTabChange = (value: string) => {
+    if (value === 'bio') {
+      router.push('/')
+    } else {
+      router.push(`/?tab=${value}`)
+    }
+  }
+
   return (
     <AnimatePresence>
       <motion.div 
@@ -37,11 +50,14 @@ const About: React.FC<AboutProps> = ({ name, title, subtitle, imageUrl, tabs }) 
           <div className="w-fit h-full flex gap-2 flex-col justify-center items-center md:items-start">
             <p className={cn(rubik.className, "md:text-7xl text-5xl font-bold text-center md:text-start")}>{name}</p>
             <p className="text-lg text-subtitle text-center md:text-start">{title}</p>
-            <LinkScroller name={subtitle}/>
+            <div className="flex gap-2 items-center">
+              <location.icon className="w-5 h-5 text-primary" />
+              <span className="text-foreground">{location.username}</span>
+            </div>
           </div>
         </motion.div>
 
-        <Tabs defaultValue={tabs[0].value} className="z-10 w-full h-fit flex flex-col justify-center items-center">
+        <Tabs value={currentTab} onValueChange={handleTabChange} className="z-10 w-full h-fit flex flex-col justify-center items-center">
           <motion.div variants={itemVariants}>
             <TabsList>
               {tabs.map((tab) => (

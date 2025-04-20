@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { AnimatePresence, motion } from 'framer-motion'
-import { personalLinks } from '@/lib/resume/links'
+import { personalLinks } from '@/lib/links'
 import {
     Tooltip,
     TooltipContent,

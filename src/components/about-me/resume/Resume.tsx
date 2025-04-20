@@ -31,7 +31,7 @@ const Resume = () => {
                   <User className='text-primary'/>
                   <CardTitle>Introduction</CardTitle>
                 </div>
-                <CardDescription>Who is Andrés Aguilar?</CardDescription>
+                <CardDescription>Who am I?</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p>{tagline}</p>

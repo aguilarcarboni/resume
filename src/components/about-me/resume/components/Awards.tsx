@@ -19,8 +19,8 @@ const Awards = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {awards.map((award, index) => (
             <div key={index} className="flex flex-col bg-muted p-3 rounded-md items-start justify-center">
-              <h3 className="font-semibold text-lg">{award.title}</h3>
-              <p className="text-sm text-muted-foreground">{award.description}</p>
+              <h3 className="font-semibold text-md">{award.title}</h3>
+              <p className="text-sm text-subtitle">{award.description}</p>
             </div>
           ))}
         </div>
