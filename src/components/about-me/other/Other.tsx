@@ -6,12 +6,13 @@ import { Lightbulb, Quote } from 'lucide-react'
 import Link from 'next/link'
 import { containerVariants, itemVariants } from '@/lib/anims'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { FaQuoteRight } from 'react-icons/fa'
 
 const coolItems = [
   {
     title: "Quotes",
     description: "Explore quotes that inspire me",
-    icon: Quote,
+    icon: FaQuoteRight,
     href: "/quotes"
   }
 ]

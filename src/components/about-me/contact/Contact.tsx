@@ -16,10 +16,10 @@ export default function Contact() {
       <motion.div
         variants={itemVariants}
       >
-      <Card className="w-full px-10">
-        <CardContent className="flex flex-col gap-4 justify-start items-start">
+      <Card className="w-full px-8">
+        <CardContent className="flex flex-col gap-4 justify-start items-center">
           {personalLinks.map((item, index) => (
-            <Button key={index} variant="ghost" className="gap-2 w-fit h-fit flex p-5" asChild>
+            <Button key={index} variant="ghost" className="gap-2 w-fit h-fit flex p-2" asChild>
               <Link href={item.href} target="_blank" rel="noopener noreferrer">
                 <item.icon className="w-5 h-5 text-primary" />
                 <span className="text-foreground">{item.username}</span>

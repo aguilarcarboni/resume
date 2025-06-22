@@ -123,7 +123,7 @@ function PageContent({ content, pageNumber, totalPages }: PageContentProps) {
     <div className="h-full flex flex-col justify-between">
 
       <div className="flex-1 flex items-center justify-center">
-        <div className="max-w-md">
+        <div className="max-w-md p-10">
           <p className="text-xl font-serif leading-relaxed text-foreground italic">"{content.text}"</p>
           <p className="mt-6 text-right text-primary font-serif">— {content.author}</p>
         </div>

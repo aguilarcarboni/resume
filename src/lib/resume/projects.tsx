@@ -1,3 +1,11 @@
+export enum PROJECT_STATE {
+  Completed = 1,
+  InProgress = 2,
+  NotStarted = 0,
+}
+
+import { Rocket, TrendingUp, Zap, Ticket } from 'lucide-react'
+
 export const projects = [
     {
       'name': 'ABMODEL',
@@ -11,8 +19,9 @@ export const projects = [
           <li>Detailed information panels for each Moonquake event</li>
         </ul>
       </div>,
-      'state': 1,
-      'url': 'https://abmodel-nasa.vercel.app/'
+      'state': PROJECT_STATE.Completed,
+      'url': 'https://abmodel-nasa.vercel.app/',
+      'icon': Rocket
     },
     {
       'name': 'AGM Web Ecosystem',
@@ -27,8 +36,9 @@ export const projects = [
           <li>Compliance with financial regulations</li>
         </ul>
       </div>,
-      'state': 1,
-      'url': 'https://agmtechnology.com/'
+      'state': PROJECT_STATE.Completed,
+      'url': 'https://agmtechnology.com/',
+      'icon': TrendingUp
     },
     {
       'name': 'Spectra',
@@ -43,8 +53,9 @@ export const projects = [
           <li>Collaborative platform for researchers</li>
         </ul>
       </div>,
-      'state': 1,
-      'url': ''
+      'state': PROJECT_STATE.Completed,
+      'url': '',
+      'icon': Zap
     },
     {
       'name': 'StarTickets Website Refresh',
@@ -59,7 +70,8 @@ export const projects = [
           <li>Improved site performance, increasing page load speed by 25%</li>
         </ul>
       </div>,
-      'state': 1,
-      'url': 'https://starticket.cr/en'
+      'state': PROJECT_STATE.Completed,
+      'url': 'https://starticket.cr/en',
+      'icon': Ticket
     },
 ]

@@ -25,7 +25,7 @@ const Resume = () => {
           className="grid grid-cols-1 md:grid-cols-4 gap-4"
         >
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-4">
-            <Card className="h-full flex flex-col transition-transform duration-300 group-hover:scale-105">
+            <Card className="h-full flex flex-col">
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <User className='text-primary'/>

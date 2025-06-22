@@ -16,7 +16,7 @@ const Bio = () => {
         variants={itemVariants}
         className="group w-full max-w-5xl mx-auto"
       >
-        <Card className="h-full flex flex-col transition-transform duration-300 group-hover:scale-105">
+        <Card className="h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center space-x-2">
               <item.icon className="w-6 h-6 text-primary" />

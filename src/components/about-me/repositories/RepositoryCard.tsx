@@ -21,39 +21,29 @@ function RepositoryCard({ repo }: { repo: Repository }) {
         variants={itemVariants}
         className="group w-full"
         >
-        <Card className="flex flex-col h-full transition-transform duration-300 group-hover:scale-105 border-primary/20">
-            <CardHeader className="space-y-2">
-            <CardTitle className="text-xl font-bold truncate text-foreground">{repo.name}</CardTitle>
-            <CardDescription className="text-sm text-subtitle line-clamp-2">
+        <Card className="flex flex-col h-full">
+            <CardHeader>
+            <CardTitle>{repo.name}</CardTitle>
+            <CardDescription>
                 {repo.description || 'No description available'}
             </CardDescription>
             </CardHeader>
-            <CardContent className="flex-grow flex flex-col justify-between">
-            <div className="flex items-center space-x-2 mb-4">
-                {repo.language && (
-                <Badge className="text-xs font-medium text-background">
-                    {repo.language}
-                </Badge>
-                )}
-                <span className="text-xs text-subtitle">
-                Updated: {new Date(repo.pushed_at).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
-                </span>
-            </div>
-            <Button
-                variant="ghost"
-                size="sm"
-                asChild
-                className="w-fit"
-            >
-                <Link
-                href={repo.html_url} 
-                target="_blank" 
-                rel="noopener noreferrer"
+            <CardContent className="flex flex-col justify-end h-full items-start">
+                <Button
+                    variant="ghost"
+                    size="sm"
+                    asChild
+                    className="w-full"
                 >
-                    <FaGithub className="w-4 h-4 mr-2" />
-                    View on GitHub
-                </Link>
-            </Button>
+                    <Link
+                    href={repo.html_url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                        <FaGithub className="w-4 h-4 mr-2" />
+                        View on GitHub
+                    </Link>
+                </Button>
             </CardContent>
         </Card>
         </motion.div>

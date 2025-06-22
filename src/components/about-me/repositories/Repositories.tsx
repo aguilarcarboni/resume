@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
-import { Github, Loader2 } from 'lucide-react'
+import { ArrowDown, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { containerVariants } from '@/lib/anims'
 import { toast } from '@/hooks/use-toast'
@@ -22,20 +22,25 @@ export function Repositories() {
   const [isLoading, setIsLoading] = useState(true)
   const [page, setPage] = useState(1)
   const [hasMore, setHasMore] = useState(true)
+  const REPOS_PER_PAGE = 12
 
   async function fetchRepos(pageNumber: number) {
     setIsLoading(true)
     try {
-      const response = await fetch(`https://api.github.com/users/aguilarcarboni/repos?page=${pageNumber}&per_page=6&sort=pushed&direction=desc`)
+      const response = await fetch(`https://api.github.com/users/aguilarcarboni/repos?page=${pageNumber}&per_page=${REPOS_PER_PAGE}&sort=pushed&direction=desc`)
       if (!response.ok) {
         throw new Error('Failed to fetch repositories')
       }
       const data: Repository[] = await response.json()
+      
       setRepos(prevRepos => {
         const updatedRepos = [...prevRepos, ...data]
-        return updatedRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
+        const uniqueRepos = updatedRepos.filter((repo, index, self) => 
+          index === self.findIndex(r => r.id === repo.id)
+        )
+        return uniqueRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
       })
-      setHasMore(data.length === 6) // Assuming 6 items per page
+      setHasMore(data.length === REPOS_PER_PAGE)
     } catch (err) {
       toast({
         title: 'Error fetching repositories',
@@ -55,6 +60,14 @@ export function Repositories() {
     fetchRepos(nextPage)
   }
 
+  if (isLoading) {
+    return (
+      <div className="flex justify-center">
+        <Loader2 className="w-4 h-4 animate-spin" />
+      </div>
+    )
+  }
+
   return (
     <div className="space-y-6">
       <motion.div
@@ -67,6 +80,7 @@ export function Repositories() {
           <RepositoryCard key={repo.id} repo={repo} />
         ))}
       </motion.div>
+            
       {hasMore && (
         <motion.div
           className="flex justify-center"
@@ -79,7 +93,12 @@ export function Repositories() {
             disabled={isLoading}
             variant="ghost"
           >
-            {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Load older stuff...'}
+            {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 
+            <span className="flex items-center gap-2">
+              <ArrowDown className="w-4 h-4" />
+              Load More
+            </span>
+            }
           </Button>
         </motion.div>
       )}

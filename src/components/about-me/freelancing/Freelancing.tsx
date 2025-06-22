@@ -1,9 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { containerVariants, itemVariants } from '@/lib/anims'
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
+import { Briefcase } from 'lucide-react'
 
 const Freelancing = () => {
   const router = useRouter()
@@ -21,14 +22,19 @@ const Freelancing = () => {
     >
       <motion.div variants={itemVariants}>
         <Card className="h-full flex flex-col">
-          
+          <CardHeader>
+            <div className="flex items-center space-x-2">
+              <Briefcase className="w-6 h-6 text-primary" />
+              <CardTitle>Work with me</CardTitle>
+            </div>
+            <CardDescription>
+              As a freelance software engineer and data scientist I'm always excited to work on new projects.
+            </CardDescription>
+          </CardHeader>
           <CardContent className="flex-grow space-y-4">
-            <p 
-              className="leading-relaxed"
-            >
-              As a freelance software engineer and data scientist, I offer a range of services including:
+            <p className="leading-relaxed">
+              I offer a great range of services including:
             </p>
-            
             <ul 
               className="list-disc pl-5 space-y-2"
             >
@@ -50,7 +56,7 @@ const Freelancing = () => {
                 variant="ghost"
                 onClick={handleContactClick}
               >
-                <span className="shimmer-text-blue">Let's work together</span>
+                <span className="shimmer-text-blue">Contact me</span>
               </Button>
             </div>
           </CardContent>
