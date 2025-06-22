@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = ({ name, title, imageUrl, tabs }) => {
             {imageUrl && <Image src={imageUrl} alt={''} fill className="object-cover" />}
           </div>
           <div className="w-fit h-full flex gap-2 flex-col justify-center items-center md:items-start">
-            <p className={cn(rubik.className, "md:text-7xl text-5xl font-bold text-center md:text-start")}>{name}</p>
+            <p className={cn(rubik.className, "md:text-6xl text-4xl font-bold text-center md:text-start")}>{name}</p>
             <p className="text-lg text-subtitle text-center md:text-start">{title}</p>
             <div className="flex gap-2 items-center">
               <location.icon className="w-5 h-5 text-primary" />

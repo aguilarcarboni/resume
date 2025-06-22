@@ -60,7 +60,7 @@ const AboutMe = () => {
   return (
     <Suspense>
       <About
-        name="Andrés Aguilar"
+        name="Andrés Aguilar Carboni"
         title="Software Engineer & Data Scientist"
         subtitle="aguilarcarboni"
         imageUrl="/assets/headshots/headshot.jpg"
