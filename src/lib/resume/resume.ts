@@ -40,7 +40,7 @@ export const experiences = [
 export const skills = [
     {
       title: "Front-end Development",
-      description: "React, Nextjs, TypeScript, HTML, CSS",
+      description: "React, Nextjs, TypeScript, HTML, CSS, Tailwind, Shadcn",
       icon: Laptop,
     },
     {
@@ -50,12 +50,12 @@ export const skills = [
     },
     {
       title: "Database Systems",
-      description: "SQL, MongoDB, PostgreSQL",
+      description: "SQL, MongoDB, PostgreSQL, Firebase",
       icon: Database,
     },
     {
       title: "DevOps and Deployment",
-      description: "Github, Gitlab, Docker, Kubernetes",
+      description: "Github, Gitlab, Docker, Kubernetes, Linux, Google Cloud",
       icon: HardDriveUpload
     },
     {
