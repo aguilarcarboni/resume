@@ -27,7 +27,7 @@ export const experiences = [
       title: "Software Engineering Intern",
       company: "PRIAS at Centro Nacional de Alta Tecnología",
       period: "January 2023 - June 2024",
-      description: "Spearheaded the development of Spectra, a custom-built web application and relational database designed to store and display detailed information about researchers and mission data. This platform significantly enhanced data accessibility and streamlined research reporting, contributing to improved operational efficiency within the lab. Also collaborated closely with research teams to gather requirements and ensure the platform met scientific data management needs.",
+      description: "Led the development of Spectra, a custom-built web application and relational database designed to store and display detailed information about researchers and mission data. This platform significantly enhanced data accessibility and streamlined research reporting, contributing to improved operational efficiency within the lab. Also collaborated closely with research teams to gather requirements and ensure the platform met scientific data management needs.",
     },
     {
       title: "Learning Assistant and Tutor",
