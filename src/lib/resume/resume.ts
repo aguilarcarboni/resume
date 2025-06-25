@@ -18,10 +18,10 @@ export const experiences = [
       },
     ],
     {
-      title: "Founder",
-      company: "laserfocus",
-      period: "January 2023 - Present",
-      description: "What began as a private mathematics tutoring service for college and high school students evolved into Laserfocus, a technology-driven company dedicated to empowering individuals to achieve their personal and professional goals with clarity and precision. Laserfocus offers a suite of AI-powered services designed to enhance productivity, streamline decision-making, and optimize performance. By leveraging cutting-edge technology, Laserfocus provides clients with unparalleled tools to harness their potential and turn dreams into reality, setting a new standard for success-driven innovation.",
+      title: "Private Tutor",
+      company: "Self-Employed",
+      period: "January 2022 - August 2024",
+      description: "Provided personalized tutoring services in mathematics, physics, and programming to over 30 students across high school and university levels. Successfully guided high school students through core math and physics curricula, while also helping university students master Pre-Calculus, Calculus I, and Calculus II. Additionally offered programming mentorship tailored to students’ academic and professional goals, focusing on problem-solving and foundational software engineering skills. Known for delivering clear explanations, building student confidence, and enabling academic success in technical subjects.",
     },
     {
       title: "Software Engineering Intern",
