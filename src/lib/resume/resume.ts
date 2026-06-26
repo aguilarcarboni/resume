@@ -73,13 +73,13 @@ export const skills = [
 
 export const languages = [
     {
-      name: 'English',
-      url: '/assets/icons/flags/united-kingdom.png',
+      name: 'Spanish',
+      url: '/assets/icons/flags/spain.png',
       level: 'Native',
     },
     {
-      name: 'Spanish',
-      url: '/assets/icons/flags/spain.png',
+      name: 'English',
+      url: '/assets/icons/flags/united-kingdom.png',
       level: 'Native',
     },
     {
@@ -87,19 +87,29 @@ export const languages = [
       url: '/assets/icons/flags/france.png',
       level: 'Intermediate',
     },
+    {
+      name: 'Italian',
+      url: '/assets/icons/flags/italy.png',
+      level: 'Beginner',
+    },
 ]
 
 
 export const education = [
     {
-      degree: "BS in Computer Science",
+      degree: "Bachelors of Science in Computer Science",
       institution: "Texas Tech University, Costa Rica",
-      period: "August 2021 - Present",
+      period: "August 2021 - May 2026",
     },
     {
       degree: "Minor in Mathematics",
       institution: "Texas Tech University, Costa Rica",
-      period: "August 2021 - Present",
+      period: "August 2021 - May 2026",
+    },
+    {
+      degree: "Minor in Artificial Intelligence",
+      institution: "Texas Tech University, Costa Rica",
+      period: "August 2021 - May 2026",
     },
     {
       degree: "High School Diploma",
@@ -115,27 +125,27 @@ export const awards = [
   },
   {
     title: "President of Texas Tech Costa Rica",
-    description: "Feb 2024-April 2025",
+    description: "Feb 2024 - April 2025",
   },
   {
-    title: "President of Raider Athletics",
-    description: "Jan 2024-present",
+    title: "Founder of Texas Tech Football Club",
+    description: "Jan 2024",
   },
   {
     title: "Co-founder and Director of Operations of the Startup and Tech Lab",
-    description: "Sept 2023-present",
+    description: "Sept 2023 - May 2026",
   },
   {
     title: "Hosted Texas Tech Costa Rica's annual hackathon",
-    description: "Nov 2023, Nov 2024",
+    description: "Nov 2023, Nov 2024, Nov 2025",
   },
   {
     title: "Dean's List",
-    description: "Fall 2021, Fall 2022, Spring 2023 semesters",
+    description: "Fall 2021, Fall 2022, Spring 2023",
   },
   {
     title: "Presidential's Award",
-    description: "Spring 2022 semester",
+    description: "Spring 2022",
   },
   {
     title: "55% Tuition Scholarship",

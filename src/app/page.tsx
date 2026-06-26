@@ -6,9 +6,8 @@ import Portfolio from '@/components/about-me/portfolio/Portfolio'
 import { Repositories } from '@/components/about-me/repositories/Repositories'
 import Bio from '@/components/about-me/bio/Bio'
 import Freelancing from '@/components/about-me/freelancing/Freelancing'
-import Contact from '@/components/about-me/contact/Contact'
 import Other from '@/components/about-me/other/Other'
-import { Mail, File, User, Briefcase, Code } from 'lucide-react'
+import { File, User, Briefcase, Code } from 'lucide-react'
 
 const AboutMe = () => {
   
@@ -38,23 +37,17 @@ const AboutMe = () => {
       icon: <Code />
     },
     {
-      value: "freelancing",
-      label: "Freelancing",
-        content: <Freelancing />,
+      value: "work-with-me",
+      label: "Work with me",
+      content: <Freelancing />,
       icon: <Briefcase />
-    },
-    {
-      value: "contact",
-      label: "Contact",
-      content: <Contact />,
-      icon: <Mail />
     },
     {
       value: "other",
       label: "Other",
       content: <Other />,
       icon: <Code />
-    }
+    },
   ]
 
   return (

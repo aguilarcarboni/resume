@@ -38,9 +38,5 @@ export const quotes = [
     {
       text: "Wishes aren't just ideas, they are part of our heart. The best part of it.",
       author: "Unknown"
-    },
-    {
-      text: "Teach that kid how to act. We're all unpaid actors in some giant script.",
-      author: "Kanye West"
     }
   ]

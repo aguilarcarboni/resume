@@ -82,9 +82,9 @@ const Other = () => {
                 <ChevronLeft className="h-4 w-4" />
               </Button>
             </motion.div>
-            <div className="relative w-full max-w-4xl">
-              <Card className="w-fit">
-                <CardContent>
+            <div className="relative w-full max-w-5xl px-3 sm:px-4">
+              <Card className="w-fit shadow-sm">
+                <CardContent className="p-3 sm:p-4">
                 <div className="flex">
                   {coolItems.map((item, index) => (
                     <motion.div 
@@ -96,12 +96,12 @@ const Other = () => {
                       <Button
                         asChild
                         variant="ghost"
-                        className="w-[200px] h-48 flex flex-col gap-4"
+                        className="h-56 w-[260px] flex flex-col gap-5 rounded-xl px-6 py-8 sm:h-64 sm:w-[300px]"
                       >
                         <Link href={item.href}>
-                          <item.icon className="w-12 h-12 text-primary" />
-                          <span className="text-2xl font-semibold">{item.title}</span>
-                          <span className="text-sm text-subtitle text-center">{item.description}</span>
+                          <item.icon className="h-14 w-14 text-primary sm:h-16 sm:w-16" />
+                          <span className="text-2xl font-semibold sm:text-3xl">{item.title}</span>
+                          <span className="max-w-[18rem] text-center text-base text-subtitle">{item.description}</span>
                         </Link>
                       </Button>
                     </motion.div>

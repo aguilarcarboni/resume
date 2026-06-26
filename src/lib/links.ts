@@ -2,11 +2,6 @@ import { Mail } from "lucide-react";
 import { FaEnvelope, FaGithub, FaInstagram, FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export const personalLinks = [
-  { 
-    icon: FaEnvelope, 
-    href: 'mailto:aguilarcarboni@gmail.com',
-    username: 'aguilarcarboni@gmail.com'
-  },
   {
     name: 'Instagram',
     icon: FaInstagramSquare,
@@ -27,5 +22,10 @@ export const personalLinks = [
     icon: FaTwitter, 
     href: 'https://twitter.com/aguilarcarboni', 
     username: 'aguilarcarboni'
+  },
+  { 
+    icon: FaEnvelope, 
+    href: 'mailto:aguilarcarboni@gmail.com',
+    username: 'aguilarcarboni@gmail.com'
   },
 ];

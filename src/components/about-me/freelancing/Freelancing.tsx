@@ -3,16 +3,11 @@ import { motion } from 'framer-motion'
 import { containerVariants, itemVariants } from '@/lib/anims'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { useRouter } from 'next/navigation'
 import { Briefcase } from 'lucide-react'
+import Link from 'next/link'
+import { personalLinks } from '@/lib/links'
 
 const Freelancing = () => {
-  const router = useRouter()
-
-  const handleContactClick = () => {
-    router.push('/?tab=contact')
-  }
-
   return (
     <motion.div 
       variants={containerVariants}
@@ -48,16 +43,24 @@ const Freelancing = () => {
             </ul>
             
             <p className="leading-relaxed">
-              Im passionate about delivering high-quality, tailored solutions that meet your specific needs. Whether youre a startup looking to build your MVP or an established company seeking to optimize your processes, Im here to help.
+              I'm passionate about delivering high-quality, tailored solutions that meet your specific needs. Whether youre a startup looking to build your MVP or an established company seeking to optimize your processes I'm here to help. Contact me below:
             </p>
-            <div className="pt-4">
-              <Button
-                className="bg-transparent hover:bg-muted"
-                variant="ghost"
-                onClick={handleContactClick}
-              >
-                <span className="shimmer-text-blue">Contact me</span>
-              </Button>
+            <div className="space-y-3 pt-4">
+              <div className="flex flex-wrap gap-3">
+                {personalLinks.map((item, index) => (
+                  <Button
+                    key={index}
+                    variant="ghost"
+                    size="icon"
+                    className="h-10 w-10 rounded-full"
+                    asChild
+                  >
+                    <Link href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.name}>
+                      <item.icon className="h-5 w-5 text-primary" />
+                    </Link>
+                  </Button>
+                ))}
+              </div>
             </div>
           </CardContent>
         </Card>

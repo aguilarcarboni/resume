@@ -19,7 +19,13 @@ const Languages = () => {
       <CardContent className="flex justify-around items-center">
         {languages.map((language) => (
           <div key={language.name} className="flex flex-col items-center">
-            <Image src={language.url} alt={language.name} width={40} height={40} className="mb-2" />
+            {language.url ? (
+              <Image src={language.url} alt={language.name} width={40} height={40} className="mb-2" />
+            ) : (
+              <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-muted">
+                <Globe className="h-5 w-5 text-muted-foreground" />
+              </div>
+            )}
             <p className="font-semibold">{language.name}</p>
             <p className="text-sm text-muted-foreground">{language.level}</p>
           </div>

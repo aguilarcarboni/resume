@@ -4,7 +4,7 @@ export const bio = [
     { 
       title: "Get to know me", 
       description: "A little about myself", 
-      content: "I am a software engineer with hands-on experience on front-end web development, back-end engineering, database systems, devops, and anything else you can think of. I'm currently working towards a Bachelor’s of Science in Computer Science with a minor in Mathematics at Texas Tech University.", 
+      content: "I am a software engineer with hands-on experience on front-end web development, back-end engineering, database systems, devops, and anything else you can think of. I earned a Bachelor of Science in Computer Science from Texas Tech University with minors in Mathematics and Artificial Intelligence in May 2026.", 
       icon: User 
     },
     {
