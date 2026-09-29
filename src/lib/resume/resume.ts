@@ -3,6 +3,12 @@ import { Laptop, Code, Database, HardDriveUpload, Bot, SquareChartGantt } from "
 export const tagline = 'Driven software engineer with a passion for tackling challenging projects that inspire growth and innovation. Committed to delivering excellence in every endeavor, I thrive on developing impactful solutions that bridge the gap between technology and humanity. Known for fostering collaboration, I strive to uplift teammates and create projects that positively influence communities worldwide.'
 
 export const experiences = [
+    {
+      title: "Co-Founder, Software Architecture",
+      company: "Odysea",
+      period: "February 2026 - Present",
+      description: "Co-founded Odysea, a software studio focused on building custom software tailored to businesses’ operational needs. Lead software architecture and technical planning across multiple projects, translating client requirements into system designs and implementation plans for internal tools, workflow management platforms, and AI-assisted interfaces. Work on projects spanning gym operations, member management, and document-intensive business processes, defining the technical structure needed to support each workflow. Additionally, guide engineering decisions to ensure maintainable and consistent systems, working closely with my co-founders to align implementation with client needs and the company’s long-term direction.",
+    },
     [
       {
         title: "Lead Software Engineer",
