@@ -4,10 +4,10 @@ export const tagline = 'Driven software engineer with a passion for tackling cha
 
 export const experiences = [
     {
-      title: "Co-Founder, Software Architecture",
+      title: "Co-Founder, Software Architecture & Engineering",
       company: "Odysea",
       period: "February 2026 - Present",
-      description: "Co-founded Odysea, a software studio focused on building custom software tailored to businesses’ operational needs. Lead software architecture and technical planning across multiple projects, translating client requirements into system designs and implementation plans for internal tools, workflow management platforms, and AI-assisted interfaces. Work on projects spanning gym operations, member management, and document-intensive business processes, defining the technical structure needed to support each workflow. Additionally, guide engineering decisions to ensure maintainable and consistent systems, working closely with my co-founders to align implementation with client needs and the company’s long-term direction.",
+      description: "Lead software architecture and engineering at Odysea, designing and developing custom software tailored to how businesses operate. Translate operational needs into scalable, maintainable systems through hands-on coding, backend development, API integrations, database design, and full-stack implementation. Architect and build internal tools, workflow management platforms, automation solutions, and AI-powered applications. Drive technical decisions across system design, development, and deployment, focusing on clean code, performance, reliability, and software that evolves alongside each business.",
     },
     [
       {
